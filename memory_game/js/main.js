@@ -29,6 +29,7 @@ var cardsInPlay = [
 
 function checkForMatch() {
 
+console.log(cards[cardId].cardImage)
 	if (cardsInPlay[0] === cardsInPlay[1]) {
   console.log("You found a match!");
 	} 
@@ -37,21 +38,22 @@ function checkForMatch() {
 	}
 };
 function flipCard(cardId) {
+	this.getAttribute(data-id[cardId]);
 	cardsInPlay.push(cards[cardId].rank);
 
 	console.log("User flipped a" + " " + cards[cardId].rank);
 	console.log(cardImage);
 	console.log(suit);
 	
-
-
-	
-
 };
 
-flipCard(0);
+function createBoard() {
+	for (var i = 0; i < arrayName.length; i++) {
+	}
+};
 
-flipCard(2);
+var cardElement = document.createElement('img');
+createBoard();
 
 checkForMatch();
 
